@@ -1,19 +1,19 @@
-plugins { // ① build.gradle
+plugins {
     id 'java'
     id 'org.springframework.boot' version '3.2.0'
     id 'io.spring.dependency-management' version '1.1.0'
 }
 
-// ②
-group 'pew.kr' // 지정한 그룹 이름
+
+group 'pew.kr'
 version '1.0'
 sourceCompatibility = '17'
 
-repositories { // ③
+repositories {
     mavenCentral()
 }
 
-dependencies { // ④
+dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
